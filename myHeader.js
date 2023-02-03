@@ -1,9 +1,9 @@
 const myLinks = [
     ["Inicio", "/"],
     ["Teste", "/teste.html"],
-    ["Quem sou", "/quem sou.html"],
     ["Projeto 1", "/projects/projeto1.html"],
     ["Curriculo", "/curriculo.html"],
+    ["Quem sou", "/quem sou.html"],
     ["GitHub","https://github.com/ivanpedroc"],
     ["Linkedin","https://www.linkedin.com/in/ivan-santos-8aa19a220"],
 
@@ -46,5 +46,12 @@ function navBar(webpageList) {
     return nav;
 }
 
+function addCSS(){
+    let myCSS = document.createElement("link");
+myCSS.setAttribute("rel", "stylesheet");
+myCSS.setAttribute("href", "/estilo.css");
+document.head.appendChild(myCSS);
+}
+addCSS();
 customElements.define("my-header", MyHeader);d
 
