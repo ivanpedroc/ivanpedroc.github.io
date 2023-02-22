@@ -1,11 +1,11 @@
 const myLinks = [
-    ["Inicio", "/"],
-    ["Teste", "/teste.html"],
-    ["Projeto 1", "/projects/projeto1.html"],
-    ["Curriculo", "/curriculo.html"],
+    //["Inicio", "/"],
+    ["curso", "/curso.html"],
+    ["Aprenda com vídeos", "/Aprenda com vídeos.html"],
+    //["Curriculo", "/curriculo.html"],
     ["Quem sou", "/quem sou.html"],
-    ["GitHub","https://github.com/ivanpedroc"],
-    ["Linkedin","https://www.linkedin.com/in/ivan-santos-8aa19a220"],
+    //["GitHub","https://github.com/ivanpedroc"],
+    //["Linkedin","https://www.linkedin.com/in/ivan-santos-8aa19a220"],
 
 ];
 
@@ -16,7 +16,7 @@ class MyHeader extends HTMLElement{
         const titleDiv = document.createElement("div");
         const pageTitle = document.createElement("h1");
 
-        pageTitle.textContent = "Meu Site";
+        pageTitle.textContent = "English Online";
         titleDiv.appendChild(pageTitle);
         header.appendChild(titleDiv);
         header.appendChild(navBar(myLinks));
